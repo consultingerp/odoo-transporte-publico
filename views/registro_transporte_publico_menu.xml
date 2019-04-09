@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+        <menuitem id="menu_registro_vehiculos" name="Registro Vehículos" sequence="10"></menuitem>
+        <menuitem id="menu_registro_vehiculos_configuracion" parent="menu_registro_vehiculos" name="Configuración" sequence="70"></menuitem>
+
+        <act_window id="action_registrotransportepublico_vehiculo"
+                    name="Vehículo"
+                    res_model="registrotransportepublico.vehiculo"
+                    view_mode="tree,form" />
+
+        <menuitem id="menu_registro_vehiculos_configuracion_vehiculo"
+                  parent="menu_registro_vehiculos_configuracion"
+                  name="Vehículo"
+                  sequence="70"
+                  action="action_registrotransportepublico_vehiculo"></menuitem>
+    </data>
+</openerp>

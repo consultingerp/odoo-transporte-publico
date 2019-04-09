@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<openerp>
+    <data noupdate="0">
+        <!-- Data Vehiculo -->
+        <record model="registrotransportepublico.vehiculo" id="chevrolet">
+            <field name="name">Chevrolet</field>
+        </record>
+        <record model="registrotransportepublico.vehiculo" id="mazda">
+            <field name="name">Mazda</field>
+        </record>
+        <record model="registrotransportepublico.vehiculo" id="renault">
+            <field name="name">Renault</field>
+        </record>
+        <record model="registrotransportepublico.vehiculo" id="hyundai">
+            <field name="name">Hyundai</field>
+        </record>
+        <record model="registrotransportepublico.vehiculo" id="ford">
+            <field name="name">Ford</field>
+        </record>
+    </data>
+</openerp>

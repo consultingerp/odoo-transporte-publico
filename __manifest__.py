@@ -10,7 +10,8 @@
     'depends': [],
     'summary': '',
     'data': [
-        'views/'
+        'views/registro_transporte_publico_menu.xml',
+        'data/data_registro_transporte_publico.xml'
     ],
     'installable': True,
     'auto_install': False
