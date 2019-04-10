@@ -2,20 +2,97 @@
 <openerp>
     <data noupdate="0">
         <!-- Data Vehiculo -->
-        <record model="registrotransportepublico.vehiculo" id="chevrolet">
+        <record model="registro.vehiculo" id="chevrolet">
             <field name="name">Chevrolet</field>
+            <field name="placa">MAM-694</field>
         </record>
-        <record model="registrotransportepublico.vehiculo" id="mazda">
+        <record model="registro.vehiculo" id="mazda">
             <field name="name">Mazda</field>
+            <field name="placa">EPL-522</field>
         </record>
-        <record model="registrotransportepublico.vehiculo" id="renault">
+        <record model="registro.vehiculo" id="renault">
             <field name="name">Renault</field>
+            <field name="placa">EOZ-134</field>
         </record>
-        <record model="registrotransportepublico.vehiculo" id="hyundai">
+        <record model="registro.vehiculo" id="hyundai">
             <field name="name">Hyundai</field>
+            <field name="placa">IBY-896</field>
         </record>
-        <record model="registrotransportepublico.vehiculo" id="ford">
+        <record model="registro.vehiculo" id="ford">
             <field name="name">Ford</field>
+            <field name="placa">MAZ-789</field>
         </record>
+        <!-- End Data Vehiculo -->
+
+        <!-- Data Conductor -->
+        <record model="registro.conductor" id="conductor_1">
+            <field name="name">Carlos</field>
+            <field name="apellido">Gómez</field>
+            <field name="direccion">Cra 20 - 50</field>
+            <field name="telefono">8900000</field>
+            <field name="identificacion">1053845980</field>
+        </record>
+        <record model="registro.conductor" id="conductor_2">
+            <field name="name">Mónica</field>
+            <field name="apellido">López</field>
+            <field name="direccion">Cra 21 - 50</field>
+            <field name="telefono">8900001</field>
+            <field name="identificacion">1053845981</field>
+        </record>
+        <record model="registro.conductor" id="conductor_3">
+            <field name="name">Mario</field>
+            <field name="apellido">Aguilar</field>
+            <field name="direccion">Cra 22 - 50</field>
+            <field name="telefono">8900002</field>
+            <field name="identificacion">1053845982</field>
+        </record>
+        <record model="registro.conductor" id="conductor_4">
+            <field name="name">Laura</field>
+            <field name="apellido">Pérez</field>
+            <field name="direccion">Cra 23 - 50</field>
+            <field name="telefono">8900003</field>
+            <field name="identificacion">1053845983</field>
+        </record>
+        <record model="registro.conductor" id="conductor_5">
+            <field name="name">Camilo</field>
+            <field name="apellido">Sanchez</field>
+            <field name="direccion">Cra 24 - 50</field>
+            <field name="telefono">8900004</field>
+            <field name="identificacion">1053845984</field>
+        </record>
+        <!-- End Data Conductor -->
+
+        <!-- Data Empresa -->
+        <!--<record model="registro.empresa" id="empresa_1">
+            <field name="name">Autolegal</field>
+            <field name="direccion">Cra 20 - 50</field>
+            <field name="telefono">8900000</field>
+            <field name="nit">1007236-0</field>
+        </record>
+        <record model="registro.empresa" id="empresa_2">
+            <field name="name">Socobuses</field>
+            <field name="direccion">Cra 21 - 50</field>
+            <field name="telefono">8900001</field>
+            <field name="nit">1007236-1</field>
+        </record>
+        <record model="registro.empresa" id="empresa_3">
+            <field name="name">Serviturismo</field>
+            <field name="direccion">Cra 22 - 50</field>
+            <field name="telefono">8900002</field>
+            <field name="nit">1007236-2</field>
+        </record>
+        <record model="registro.empresa" id="empresa_4">
+            <field name="name">Gran Caldas</field>
+            <field name="direccion">Cra 23 - 50</field>
+            <field name="telefono">8900003</field>
+            <field name="nit">1007236-3</field>
+        </record>
+        <record model="registro.empresa" id="empresa_5">
+            <field name="name">Metropolitana</field>
+            <field name="direccion">Cra 24 - 50</field>
+            <field name="telefono">8900004</field>
+            <field name="nit">1007236-4</field>
+        </record>-->
+        <!-- End Data Conductor -->
     </data>
 </openerp>

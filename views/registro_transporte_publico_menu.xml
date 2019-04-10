@@ -1,18 +1,36 @@
 <?xml version="1.0"?>
 <openerp>
     <data>
-        <menuitem id="menu_registro_vehiculos" name="Registro Vehículos" sequence="10"></menuitem>
-        <menuitem id="menu_registro_vehiculos_configuracion" parent="menu_registro_vehiculos" name="Configuración" sequence="70"></menuitem>
+        <menuitem id="menu_control_vehiculos" name="Control Vehículos" sequence="10" />
+        <menuitem id="menu_control_vehiculos_configuracion" parent="menu_control_vehiculos" name="Administración" sequence="70" />
 
-        <act_window id="action_registrotransportepublico_vehiculo"
-                    name="Vehículo"
-                    res_model="registrotransportepublico.vehiculo"
+        <act_window id="action_control_vehiculo"
+                    name="Vehículos"
+                    res_model="registro.vehiculo"
                     view_mode="tree,form" />
+        <act_window id="action_control_conductor"
+                    name="Conductores"
+                    res_model="registro.conductor"
+                    view_mode="tree,form" />
+        <!--<act_window id="action_control_empresa"
+                    name="Empresas"
+                    res_model="registro.empresa"
+                    view_mode="tree,form" />-->
 
-        <menuitem id="menu_registro_vehiculos_configuracion_vehiculo"
-                  parent="menu_registro_vehiculos_configuracion"
+        <menuitem id="menu_control_vehiculo_configuracion_vehiculo"
+                  parent="menu_control_vehiculos_configuracion"
                   name="Vehículo"
                   sequence="70"
-                  action="action_registrotransportepublico_vehiculo"></menuitem>
+                  action="action_control_vehiculo" />
+        <menuitem id="menu_control_conductor_configuracion_conductor"
+                  parent="menu_control_vehiculos_configuracion"
+                  name="Conductor"
+                  sequence="70"
+                  action="action_control_conductor" />
+        <!--<menuitem id="menu_control_empresa_configuracion_empresa"
+                  parent="menu_control_vehiculos_configuracion"
+                  name="Empresa"
+                  sequence="70"
+                  action="action_control_empresa" />-->
     </data>
 </openerp>

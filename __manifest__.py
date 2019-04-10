@@ -4,7 +4,7 @@
     'version': '1.0',
     'author': 'Luis Felipe Tavera',
     'maintainer': 'Luis Felipe Tavera',
-    'website': 'www.github.com/ltavberao95',
+    'website': 'www.github.com/ltaverao95',
     'license': 'AGPL-3',
     'category': 'Extra Tools',
     'depends': [],
