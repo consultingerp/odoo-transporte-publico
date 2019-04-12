@@ -7,5 +7,5 @@ class registro_conductor(models.Model):
     name = fields.Char('Nombre', size=100, required=True)
     apellido = fields.Char('Apellido', required=True)
     direccion = fields.Char('Dirección', required=True)
-    telefono = fields.Char('Teléfono', required=True)
-    identificacion = fields.Char('Identificacion', required=True)
+    telefono = fields.Integer('Teléfono', required=True)
+    identificacion = fields.Integer('Identificacion', required=True)

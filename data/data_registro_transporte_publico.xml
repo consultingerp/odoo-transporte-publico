@@ -5,22 +5,37 @@
         <record model="registro.vehiculo" id="chevrolet">
             <field name="name">Chevrolet</field>
             <field name="placa">MAM-694</field>
+            <field name="modelo">2000</field>
+            <field name="cilindrada">2500</field>
+            <field name="capacidad">30</field>
         </record>
         <record model="registro.vehiculo" id="mazda">
             <field name="name">Mazda</field>
             <field name="placa">EPL-522</field>
+            <field name="modelo">2010</field>
+            <field name="cilindrada">4500</field>
+            <field name="capacidad">40</field>
         </record>
         <record model="registro.vehiculo" id="renault">
             <field name="name">Renault</field>
             <field name="placa">EOZ-134</field>
+            <field name="modelo">2011</field>
+            <field name="cilindrada">3500</field>
+            <field name="capacidad">25</field>
         </record>
         <record model="registro.vehiculo" id="hyundai">
             <field name="name">Hyundai</field>
             <field name="placa">IBY-896</field>
+            <field name="modelo">2012</field>
+            <field name="cilindrada">4000</field>
+            <field name="capacidad">36</field>
         </record>
         <record model="registro.vehiculo" id="ford">
             <field name="name">Ford</field>
             <field name="placa">MAZ-789</field>
+            <field name="modelo">2013</field>
+            <field name="cilindrada">5000</field>
+            <field name="capacidad">45</field>
         </record>
         <!-- End Data Vehiculo -->
 
@@ -65,7 +80,34 @@
         <!-- Data Empresa -->
         <record model="registro.empresa" id="empresa_1">
             <field name="name">Autolegal</field>
+            <field name="direccion">Cra 20 - 50</field>
+            <field name="telefono">890000</field>
+            <field name="nit">1007233260</field>
         </record>
-        <!-- End Data Conductor -->
+        <record model="registro.empresa" id="empresa_2">
+            <field name="name">Socobuses</field>
+            <field name="direccion">Cra 21 - 50</field>
+            <field name="telefono">890001</field>
+            <field name="nit">1007233261</field>
+        </record>
+        <record model="registro.empresa" id="empresa_3">
+            <field name="name">Metropolitana</field>
+            <field name="direccion">Cra 22 - 50</field>
+            <field name="telefono">890002</field>
+            <field name="nit">1007233262</field>
+        </record>
+        <record model="registro.empresa" id="empresa_4">
+            <field name="name">Serviturismo</field>
+            <field name="direccion">Cra 23 - 50</field>
+            <field name="telefono">890003</field>
+            <field name="nit">1007233263</field>
+        </record>
+        <record model="registro.empresa" id="empresa_5">
+            <field name="name">Gran Caldas</field>
+            <field name="direccion">Cra 24 - 50</field>
+            <field name="telefono">890004</field>
+            <field name="nit">1007233264</field>
+        </record>
+        <!-- End Data Empresa -->
     </data>
 </openerp>
