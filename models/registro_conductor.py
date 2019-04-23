@@ -4,6 +4,7 @@ from openerp import api, fields, models
 class registro_conductor(models.Model):
     _name = 'registro.conductor'
     _rec_name = 'name'
+    conductor_id = fields.Integer('ID', required=True)
     name = fields.Char('Nombre', size=100, required=True)
     apellido = fields.Char('Apellido', required=True)
     direccion = fields.Char('Dirección', required=True)
