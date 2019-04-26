@@ -85,6 +85,46 @@
             <field name="telefono">8900004</field>
             <field name="identificacion">1053845984</field>
         </record>
+        <record model="registro.conductor" id="conductor_6">
+            <field name="conductor_id">6</field>
+            <field name="name">Luis</field>
+            <field name="apellido">García</field>
+            <field name="direccion">Cra 26 - 50</field>
+            <field name="telefono">8900006</field>
+            <field name="identificacion">1053845986</field>
+        </record>
+        <record model="registro.conductor" id="conductor_7">
+            <field name="conductor_id">7</field>
+            <field name="name">Mariana</field>
+            <field name="apellido">Castrillón</field>
+            <field name="direccion">Cra 27 - 50</field>
+            <field name="telefono">8900007</field>
+            <field name="identificacion">1053845987</field>
+        </record>
+        <record model="registro.conductor" id="conductor_8">
+            <field name="conductor_id">8</field>
+            <field name="name">Gabriel</field>
+            <field name="apellido">Lopera</field>
+            <field name="direccion">Cra 28 - 50</field>
+            <field name="telefono">8900008</field>
+            <field name="identificacion">1053845988</field>
+        </record>
+        <record model="registro.conductor" id="conductor_9">
+            <field name="conductor_id">9</field>
+            <field name="name">Miguel</field>
+            <field name="apellido">Morales</field>
+            <field name="direccion">Cra 29 - 50</field>
+            <field name="telefono">8900009</field>
+            <field name="identificacion">1053845989</field>
+        </record>
+        <record model="registro.conductor" id="conductor_10">
+            <field name="conductor_id">10</field>
+            <field name="name">Cristian</field>
+            <field name="apellido">Robledo</field>
+            <field name="direccion">Cra 30 - 50</field>
+            <field name="telefono">8900010</field>
+            <field name="identificacion">1053845910</field>
+        </record>
         <!-- End Data Conductor -->
 
         <!-- Data Empresa -->
