@@ -2,41 +2,41 @@
 <openerp>
     <data noupdate="0">
         <!-- Data Vehiculo -->
-        <record model="registro.vehiculo" id="chevrolet">
+        <record model="registro.vehiculo" id="vehiculo_1">
             <field name="vehiculo_id">1</field>
-            <field name="name">Chevrolet</field>
+            <field name="name">1230</field>
             <field name="placa">MAM-694</field>
             <field name="modelo">2000</field>
             <field name="cilindrada">2500</field>
             <field name="capacidad">30</field>
         </record>
-        <record model="registro.vehiculo" id="mazda">
+        <record model="registro.vehiculo" id="vehiculo_2">
             <field name="vehiculo_id">2</field>
-            <field name="name">Mazda</field>
+            <field name="name">1231</field>
             <field name="placa">EPL-522</field>
             <field name="modelo">2010</field>
             <field name="cilindrada">4500</field>
             <field name="capacidad">40</field>
         </record>
-        <record model="registro.vehiculo" id="renault">
+        <record model="registro.vehiculo" id="vehiculo_3">
             <field name="vehiculo_id">3</field>
-            <field name="name">Renault</field>
+            <field name="name">1232</field>
             <field name="placa">EOZ-134</field>
             <field name="modelo">2011</field>
             <field name="cilindrada">3500</field>
             <field name="capacidad">25</field>
         </record>
-        <record model="registro.vehiculo" id="hyundai">
+        <record model="registro.vehiculo" id="vehiculo_4">
             <field name="vehiculo_id">4</field>
-            <field name="name">Hyundai</field>
+            <field name="name">1233</field>
             <field name="placa">IBY-896</field>
             <field name="modelo">2012</field>
             <field name="cilindrada">4000</field>
             <field name="capacidad">36</field>
         </record>
-        <record model="registro.vehiculo" id="ford">
+        <record model="registro.vehiculo" id="vehiculo_5">
             <field name="vehiculo_id">5</field>
-            <field name="name">Ford</field>
+            <field name="name">1234</field>
             <field name="placa">MAZ-789</field>
             <field name="modelo">2013</field>
             <field name="cilindrada">5000</field>
@@ -169,5 +169,29 @@
             <field name="vehiculo_id">5</field>
         </record>
         <!-- End Data Empresa -->
+
+        <!-- Data Marca Vehiculo -->
+        <record model="registro.marca" id="marca_1">
+            <field name="name">Chevrolet</field>
+        </record>
+        <record model="registro.marca" id="marca_2">
+            <field name="name">Renault</field>
+        </record>
+        <record model="registro.marca" id="marca_3">
+            <field name="name">Ford</field>
+        </record>
+        <record model="registro.marca" id="marca_4">
+            <field name="name">Hyundai</field>
+        </record>
+        <record model="registro.marca" id="marca_5">
+            <field name="name">Subaru</field>
+        </record>
+        <record model="registro.marca" id="marca_6">
+            <field name="name">Mitsubishi</field>
+        </record>
+        <record model="registro.marca" id="marca_7">
+            <field name="name">KIA</field>
+        </record>
+        <!-- End Data Marca Vehiculo -->
     </data>
 </openerp>
