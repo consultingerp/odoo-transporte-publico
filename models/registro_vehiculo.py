@@ -7,7 +7,7 @@ class registro_vehiculo(models.Model):
     _rec_name = 'name'
     vehiculo_id = fields.Integer('ID', required=True)
     name = fields.Char('Lateral', size=100, required=True)
-    marca = fields.Many2one('registro.marca', 'Marca', select=True, track_visibility='onchange', required=True)
+    marca = fields.Many2one('registro.marca', 'Marca', select=True, track_visibility='onchange')
     placa = fields.Char('Placa', required=True)
     modelo = fields.Integer('Modelo', required=True)
     cilindrada = fields.Float('Cilindrada', required=True)

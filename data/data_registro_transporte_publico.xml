@@ -133,40 +133,30 @@
             <field name="direccion">Cra 20 - 50</field>
             <field name="telefono">890000</field>
             <field name="nit">1007233260</field>
-            <field name="conductor_id">1</field>
-            <field name="vehiculo_id">1</field>
         </record>
         <record model="registro.empresa" id="empresa_2">
             <field name="name">Socobuses</field>
             <field name="direccion">Cra 21 - 50</field>
             <field name="telefono">890001</field>
             <field name="nit">1007233261</field>
-            <field name="conductor_id">2</field>
-            <field name="vehiculo_id">2</field>
         </record>
         <record model="registro.empresa" id="empresa_3">
             <field name="name">Metropolitana</field>
             <field name="direccion">Cra 22 - 50</field>
             <field name="telefono">890002</field>
             <field name="nit">1007233262</field>
-            <field name="conductor_id">3</field>
-            <field name="vehiculo_id">3</field>
         </record>
         <record model="registro.empresa" id="empresa_4">
             <field name="name">Serviturismo</field>
             <field name="direccion">Cra 23 - 50</field>
             <field name="telefono">890003</field>
             <field name="nit">1007233263</field>
-            <field name="conductor_id">4</field>
-            <field name="vehiculo_id">4</field>
         </record>
         <record model="registro.empresa" id="empresa_5">
             <field name="name">Gran Caldas</field>
             <field name="direccion">Cra 24 - 50</field>
             <field name="telefono">890004</field>
             <field name="nit">1007233264</field>
-            <field name="conductor_id">5</field>
-            <field name="vehiculo_id">5</field>
         </record>
         <!-- End Data Empresa -->
 
