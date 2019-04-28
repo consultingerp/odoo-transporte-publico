@@ -25,6 +25,10 @@
                     name="Marcas"
                     res_model="registro.marca"
                     view_mode="tree,form" />
+        <act_window id="action_control_salida"
+                    name="Control Salidas"
+                    res_model="registro.control_salida"
+                    view_mode="tree,form" />
 
         <menuitem id="menu_control_vehiculo_configuracion_vehiculo"
                   parent="menu_control_vehiculos_configuracion_registro"
@@ -51,5 +55,10 @@
                   name="Marca"
                   sequence="70"
                   action="action_control_marca" />
+        <menuitem id="menu_control_vehiculo_configuracion_control_salida"
+                  parent="menu_control_vehiculos_configuracion_registro"
+                  name="Control Salidas"
+                  sequence="70"
+                  action="action_control_salida" />
     </data>
 </openerp>
