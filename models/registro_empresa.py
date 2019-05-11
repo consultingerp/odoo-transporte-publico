@@ -11,3 +11,4 @@ class registro_empresa(models.Model):
     nit = fields.Char('Nit', size=50, required=True)
     conductor_id = fields.One2many('registro.conductor', 'conductor_id', 'Conductores', track_visibility='onchange')
     vehiculo_id = fields.One2many('registro.vehiculo', 'vehiculo_id', 'Vehículos', track_visibility='onchange')
+    _sql_constraints = [('name_uniq', 'unique(name)', 'Esta empresa ya se encuentra registrada.')]

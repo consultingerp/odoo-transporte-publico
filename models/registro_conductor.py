@@ -10,3 +10,4 @@ class registro_conductor(models.Model):
     direccion = fields.Char('Dirección', required=True)
     telefono = fields.Integer('Teléfono', required=True)
     identificacion = fields.Integer('Identificacion', required=True)
+    _sql_constraints = [('name_uniq', 'unique(identificacion)', 'El número de identificación debe ser único.')]
