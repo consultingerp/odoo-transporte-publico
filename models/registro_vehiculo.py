@@ -12,5 +12,5 @@ class registro_vehiculo(models.Model):
     modelo = fields.Integer('Modelo', required=True)
     cilindrada = fields.Float('Cilindrada', required=True)
     capacidad = fields.Integer('Capacidad', required=True)
-    _sql_constraints = [('name_uniq', 'unique(name)', 'El lateral del vehículo debe ser único.')]
-    _sql_constraints = [('placa_uniq', 'unique(placa)', 'El número de placa debe ser único.')]
+    _sql_constraints = [('name_uniq', 'unique(name)', 'El lateral del vehículo debe ser único.'),
+                        ('placa_uniq', 'unique(placa)', 'El número de placa debe ser único.')]
