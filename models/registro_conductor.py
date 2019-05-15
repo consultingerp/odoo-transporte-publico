@@ -9,5 +9,6 @@ class registro_conductor(models.Model):
     apellido = fields.Char('Apellido', required=True)
     direccion = fields.Char('Dirección', required=True)
     telefono = fields.Integer('Teléfono', required=True)
-    identificacion = fields.Integer('Identificacion', required=True)
+    identificacion = fields.Integer('Identificación', required=True)
+    foto_conductor = fields.Binary('Foto')
     _sql_constraints = [('name_uniq', 'unique(identificacion)', 'El número de identificación debe ser único.')]
