@@ -14,4 +14,5 @@ class registro_vehiculo(models.Model):
     capacidad = fields.Integer('Capacidad', required=True)
     foto_vehiculo = fields.Binary('Foto')
     _sql_constraints = [('name_uniq', 'unique(name)', 'El lateral del vehículo debe ser único.'),
-                        ('placa_uniq', 'unique(placa)', 'El número de placa debe ser único.')]
+                        ('placa_uniq', 'unique(placa)', 'El número de placa debe ser único.'),
+                        ('id_uniq', 'unique(vehiculo_id)', 'El ID debe ser único.')]
