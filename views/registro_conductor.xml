@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="action_control_conductor" model="ir.actions.act_window">
+        <field name="name">Conductores</field>
+        <field name="res_model">registro.conductor</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,kanban,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+					Click aqui para crear Conductores!
+            </p>
+        </field>
+    </record>
+
+    <record id="registro_conductor_tree_view" model="ir.ui.view">
+        <field name="name">registro_conductor.tree.view</field>
+        <field name="model">registro.conductor</field>
+        <field name= "arch" type = "xml">
+            <tree string="Conductores">
+                <field name="name"/>
+                <field name="apellido"/>
+                <field name="direccion"/>
+                <field name="telefono"/>
+                <field name="identificacion"/>
+                <field name="foto_conductor" widget="image" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="registro_conductor_form" model="ir.ui.view">
+        <field name="name">registro_conductor.form</field>
+        <field name="model">registro.conductor</field>
+        <field name="arch" type="xml">
+            <form string ="Formulario de Conductores" version="9.0">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="apellido"/>
+                        <field name="direccion"/>
+                        <field name="telefono"/>
+                        <field name="identificacion"/>
+                        <field name="foto_conductor" widget="image" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="registro_conductor_modelo_kanban" model="ir.ui.view">
+        <field name="name">registro_conductor.kanban</field>
+        <field name="model">registro.conductor</field>
+        <field name="type">kanban</field>
+        <field name="arch" type="xml">
+            <kanban>
+                <!--list of field to be loaded -->
+                <field name="name" />
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="oe_product_vignette">
+                            <a type="open">
+                            </a>
+                            <div class="oe_product_desc">
+                                <h4>
+                                    <a type="edit">
+                                        <field name="name" />
+                                    </a>
+                                </h4>
+                                <ul>
+                                    <field name="apellido"/>
+                                    <field name="direccion"/>
+                                    <field name="telefono"/>
+                                    <field name="identificacion"/>
+                                </ul>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+</odoo>

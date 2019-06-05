@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="action_control_vehiculo" model="ir.actions.act_window">
+        <field name="name">Vehículos</field>
+        <field name="res_model">registro.empresa</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,kanban,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+					Click aqui para crear vehículos!
+            </p>
+        </field>
+    </record>
+
+    <record id="registro_vehiculo_tree_view" model="ir.ui.view">
+        <field name="name">registro_vehiculo.tree.view</field>
+        <field name="model">registro.vehiculo</field>
+        <field name= "arch" type = "xml">
+            <tree string="Vehículos">
+                <field name="name"/>
+                <field name="marca"/>
+                <field name="placa"/>
+                <field name="modelo"/>
+                <field name="cilindrada"/>
+                <field name="capacidad"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="registro_vehiculo_form" model="ir.ui.view">
+        <field name="name">registro_vehiculo.form</field>
+        <field name="model">registro.vehiculo</field>
+        <field name="arch" type="xml">
+            <form string ="Formulario de Vehículos" version="9.0">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="marca"/>
+                        <field name="placa"/>
+                        <field name="modelo"/>
+                        <field name="cilindrada"/>
+                        <field name="capacidad"/>
+                        <field name="vehiculo_id"/>
+                        <field name="foto_vehiculo"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="registro_vehiculo_modelo_kanban" model="ir.ui.view">
+        <field name="name">registro_vehiculo.kanban</field>
+        <field name="model">registro.vehiculo</field>
+        <field name="type">kanban</field>
+        <field name="arch" type="xml">
+            <kanban>
+                <!--list of field to be loaded -->
+                <field name="name" />
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="oe_product_vignette">
+                            <a type="open">
+                            </a>
+                            <div class="oe_product_desc">
+                                <h4>
+                                    <a type="edit">
+                                        <field name="name"></field>
+                                    </a>
+                                </h4>
+                                <ul>
+                                    <field name="marca"/>
+                                    <field name="placa"/>
+                                    <field name="modelo"/>
+                                    <field name="modelo"/>
+                                    <field name="cilindrada"/>
+                                    <field name="capacidad"/>
+                                    <field name="foto_vehiculo" widget="image"/>
+                                </ul>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+</odoo>

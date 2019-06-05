@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="action_control_conductor_vehiculo" model="ir.actions.act_window">
+        <field name="name">Registro Vehículo Conductor</field>
+        <field name="res_model">registro.vehiculo_conductor</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,kanban,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+					Click aqui para crear registro de vehículos y conductores!
+            </p>
+        </field>
+    </record>
+
+    <record id="registro_vehiculo_conductor_tree_view" model="ir.ui.view">
+        <field name="name">registro_vehiculo_conductor.tree.view</field>
+        <field name="model">registro.vehiculo_conductor</field>
+        <field name= "arch" type = "xml">
+            <tree string="Registro Vehículo Conductor">
+                <field name="name"/>
+                <field name="conductor_id"/>
+                <field name="vehiculo_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="registro_vehiculo_conductor_form" model="ir.ui.view">
+        <field name="name">registro_empresa.form</field>
+        <field name="model">registro.empresa</field>
+        <field name="arch" type="xml">
+            <form string ="Formulario de Registro" version="9.0">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="conductor_id"/>
+                        <field name="vehiculo_id"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="registro_vehiculo_conductor_modelo_kanban" model="ir.ui.view">
+        <field name="name">registro_vehiculo_conductor.kanban</field>
+        <field name="model">registro.vehiculo_conductor</field>
+        <field name="type">kanban</field>
+        <field name="arch" type="xml">
+            <kanban>
+                <!--list of field to be loaded -->
+                <field name="name" />
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="oe_product_vignette">
+                            <a type="open">
+                            </a>
+                            <div class="oe_product_desc">
+                                <h4>
+                                    <a type="edit">
+                                        <field name="name"></field>
+                                    </a>
+                                </h4>
+                                <ul>
+                                    <field name="conductor_id"/>
+                                    <field name="vehiculo_id"/>
+                                </ul>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+</odoo>
